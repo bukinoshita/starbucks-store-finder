@@ -9,7 +9,7 @@ $ npm install --save starbucks
 
 ## Usage
 ```js
-import stabucks from 'stabucks'
+import starbucks from 'starbucks'
 
 const opts = {lat: -23.564431, lng: -46.654937}
 starbucks(opts).then(stores => JSON.parse(stores))
