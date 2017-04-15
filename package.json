@@ -1,0 +1,24 @@
+{
+  "name": "starbucks",
+  "version": "0.0.0",
+  "description": "Starbucks store finder",
+  "main": "index.js",
+  "repository": "git@github.com:bukinoshita/starbucks.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^6.7.1"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/xo && node_modules/.bin/ava -v"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "xo": "^0.18.1"
+  },
+  "xo": {
+    "space": true,
+    "semicolon": false,
+    "esnext": true
+  }
+}
