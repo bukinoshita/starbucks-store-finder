@@ -1,4 +1,4 @@
-# starbucks
+# starbucks [![Codeship Status for bukinoshita/starbucks](https://app.codeship.com/projects/2b359a90-0441-0135-d36c-6adab902adfa/status?branch=master)](https://app.codeship.com/projects/213418)
 
 > Starbucks store finder :coffee:
 
