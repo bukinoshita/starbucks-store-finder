@@ -26,13 +26,13 @@ Required<br/>
 Object must have `lat` and `lng` keys
 
 #### lat
-Type: `number`<br/>
+Type: `number` or `string`<br/>
 Required
 
 Latitude
 
 #### lng
-Type: `number`<br/>
+Type: `number` or `string`<br/>
 Required
 
 Longitude
