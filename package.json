@@ -1,5 +1,5 @@
 {
-  "name": "starbucks",
+  "name": "starbucks-store-finder",
   "version": "0.0.1",
   "description": "Starbucks store finder",
   "main": "index.js",
