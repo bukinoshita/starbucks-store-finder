@@ -1,6 +1,6 @@
 {
   "name": "starbucks-store-finder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Starbucks store finder",
   "main": "index.js",
   "repository": "git@github.com:bukinoshita/starbucks.git",
