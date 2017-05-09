@@ -1,15 +1,15 @@
-# starbucks [![Codeship Status for bukinoshita/starbucks](https://app.codeship.com/projects/2b359a90-0441-0135-d36c-6adab902adfa/status?branch=master)](https://app.codeship.com/projects/213418)
+# starbucks-store-finder [![Codeship Status for bukinoshita/starbucks](https://app.codeship.com/projects/2b359a90-0441-0135-d36c-6adab902adfa/status?branch=master)](https://app.codeship.com/projects/213418)
 
 > Starbucks store finder :coffee:
 
 ## Install
 ```
-$ npm install --save starbucks
+$ npm install --save starbucks-store-finder
 ```
 
 ## Usage
 ```js
-import starbucks from 'starbucks'
+import starbucks from 'starbucks-store-finder'
 
 const opts = {lat: -23.564431, lng: -46.654937}
 starbucks(opts).then(stores => JSON.parse(stores))
@@ -17,7 +17,7 @@ starbucks(opts).then(stores => JSON.parse(stores))
 ```
 
 ## API
-### starbucks(opts)
+### starbucks-store-finder(opts)
 
 #### opts
 Type: `object`<br/>
@@ -40,5 +40,7 @@ Longitude
 ## Related
 - [starbucks-cli](https://github.com/bukinoshita/starbucks-cli) — Starbucks on Command Line
 
+> Package renamed to `starbucks-store-finder` due trademark.
+
 ## License
-[MIT](https://github.com/bukinoshita/starbucks/blob/master/LICENSE) &copy; Bu Kinoshita
+[MIT](https://github.com/bukinoshita/starbucks-store-finder/blob/master/LICENSE) &copy; Bu Kinoshita
