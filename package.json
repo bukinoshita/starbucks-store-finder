@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Starbucks store finder",
   "main": "index.js",
-  "repository": "git@github.com:bukinoshita/starbucks.git",
+  "repository": "git@github.com:bukinoshita/starbucks-store-finder.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
   "dependencies": {
