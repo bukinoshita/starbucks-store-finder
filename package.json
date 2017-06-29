@@ -16,6 +16,12 @@
     "ava": "^0.19.1",
     "xo": "^0.18.1"
   },
+  "keywords": [
+    "starbucks",
+    "coffee",
+    "store",
+    "finder"
+  ],
   "xo": {
     "space": true,
     "semicolon": false,
