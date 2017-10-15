@@ -8,7 +8,7 @@ module.exports = ({ lat, lng, city, region, country } = {}) => {
 
   return new Promise((resolve, reject) => {
     if ((!lat || !lng, !city, !region, !country)) {
-      return reject(new Error('Options are required'))
+      return reject(new TypeError('Options are required'))
     }
 
     const api = `${apiUrl}?map=${lat},${lng}&place=${city},${region},${country}`

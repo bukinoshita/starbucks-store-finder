@@ -6,8 +6,15 @@
   "repository": "git@github.com:bukinoshita/starbucks-store-finder.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "keywords": ["starbucks", "coffee", "store", "finder"],
-  "files": ["index.js"],
+  "keywords": [
+    "starbucks",
+    "coffee",
+    "store",
+    "finder"
+  ],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "xo && ava -v"
   },
@@ -19,9 +26,12 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "eslint-config-prettier": "^2.6.0",
+    "geocoder-geojson": "^1.11.0",
     "xo": "^0.18.1"
   },
   "xo": {
-    "extends": ["prettier"]
+    "extends": [
+      "prettier"
+    ]
   }
 }
