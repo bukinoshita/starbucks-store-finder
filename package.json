@@ -6,25 +6,22 @@
   "repository": "git@github.com:bukinoshita/starbucks-store-finder.git",
   "author": "Bu Kinoshita <bukinoshita@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "got": "^6.7.1"
-  },
+  "keywords": ["starbucks", "coffee", "store", "finder"],
+  "files": ["index.js"],
   "scripts": {
-    "test": "node_modules/.bin/xo && node_modules/.bin/ava -v"
+    "test": "xo && ava -v"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
   },
   "devDependencies": {
     "ava": "^0.19.1",
+    "eslint-config-prettier": "^2.6.0",
     "xo": "^0.18.1"
   },
-  "keywords": [
-    "starbucks",
-    "coffee",
-    "store",
-    "finder"
-  ],
   "xo": {
-    "space": true,
-    "semicolon": false,
-    "esnext": true
+    "extends": ["prettier"]
   }
 }
