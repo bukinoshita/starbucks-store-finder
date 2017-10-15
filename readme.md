@@ -51,6 +51,27 @@ Required
 
 Longitude
 
+#### city
+
+Type: `string`<br/>
+Required
+
+City
+
+#### region
+
+Type: `string`<br/>
+Required
+
+Region
+
+#### country
+
+Type: `string`<br/>
+Required
+
+Country
+
 
 ## Related
 
