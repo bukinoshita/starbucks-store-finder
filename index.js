@@ -7,7 +7,7 @@ module.exports = ({ lat, lng, city, region, country } = {}) => {
   const apiUrl = 'https://www.starbucks.com/store-locator'
 
   return new Promise((resolve, reject) => {
-    if ((!lat || !lng, !city, !region, !country)) {
+    if ((!lat || !lng)) {
       return reject(new TypeError('Options are required'))
     }
 
@@ -16,10 +16,15 @@ module.exports = ({ lat, lng, city, region, country } = {}) => {
     request(api).then(res => {
       if (res) {
         const $ = cheerio.load(res)
-        const json = JSON.parse($('#bootstrapData').text())
-        const stores = json.storeLocator.locationState.locations
+        const textNode = $('body > script').map((i, x) => x.children[0]).filter((i, x) => x && x.data.match(/window.__BOOTSTRAP/)).get(0);
+        if(textNode) {
+          const scriptText = textNode.data.split(/\r?\n|\r/);
+          const jsonString = scriptText[1].replace(/window.__BOOTSTRAP =/g, "")
+          const json = JSON.parse(jsonString)
+          const stores = json.storeLocator.locationState.locations
 
-        resolve(stores)
+          resolve(stores)
+        }
       }
 
       reject(
